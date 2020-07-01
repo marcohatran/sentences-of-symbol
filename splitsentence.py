@@ -21,8 +21,8 @@ x = txt.replace(',',' ')
 y = splitter.split(text=x)
 #print(y)
 items = ['VCB', 'BID', 'VIC']
-
-#for i in y:
+doclist = []
+for i in y:
 
 #    print(type(i))
 #    for item in items:
@@ -30,15 +30,21 @@ items = ['VCB', 'BID', 'VIC']
 #            print('thuộc items')
 #        else:
 #            print('ko items')
-#    res = [ele for ele in items if(ele in i)]
-#    if res == []:
-#        print("thuộc item")
-#    else:
-#        print("ko thu")
+    res = [ele for ele in items if(ele in i)]
+    if res == []:
+        #print("ko thuộc item")
+        pass
+    else:
+        doclist.append(i)
+        docstr = ' '.join(doclist)
+        #print(docstr)
 
-doclist = [i for i in y]
-docstr = ' ' . join(doclist)
 print(docstr)
+
+#doclist = [i for i in y]
+#print(doclist)
+#docstr = ' ' . join(doclist)
+#print(docstr)
 
 
 

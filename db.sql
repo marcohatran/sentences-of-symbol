@@ -70,4 +70,3 @@ create table stocks
     companyName  varchar(500) charset utf8 null,
     industryCode varchar(20)               null
 );
-
